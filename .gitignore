@@ -3,6 +3,7 @@ node_modules
 build
 tmp/*
 !tmp/.gitkeep
+.adonisjs/
 
 # Secrets
 .env
@@ -12,6 +13,7 @@ tmp/*
 
 # Frontend assets compiled code
 public/assets
+*_mock.json
 
 # Build tools specific
 npm-debug.log

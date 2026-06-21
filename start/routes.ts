@@ -37,5 +37,10 @@ router
       .prefix('account')
       .as('profile')
       .use(middleware.auth())
+
+    router.get('/routes', '#controllers/transit_dashboard_controller.getRoutes')
+    router.get('/vehicles', '#controllers/transit_dashboard_controller.getVehicles')
+    router.get('/stations', '#controllers/transit_dashboard_controller.getStations')
+    router.get('/alerts', '#controllers/transit_dashboard_controller.getAlerts')
   })
   .prefix('/api/v1')
